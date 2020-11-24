@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Find and Replace
-        uses: BatoolMM/tools-iuc@master
+        uses: jacobtomlinson/gha-find-replace@master
         with:
           find: "x&#178"
           replace: "&#8730x"
