@@ -1,0 +1,14 @@
+# This is a basic workflow to replace "x&#178" with "&#8730x"
+
+name: My Workflow
+on: [push, pull_request]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Find and Replace
+        uses: BatoolMM/tools-iuc@master
+        with:
+          find: "x&#178"
+          replace: "&#8730x"
